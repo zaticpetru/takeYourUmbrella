@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import OneDayWeather from "../components/one-day-weather";
 import ShortWeatherInfo from "../components/short-weather-info";
 
@@ -25,9 +25,9 @@ export default function Weather() {
             <img width="30px" height="30px" src="/images/plus.png" alt="add city" />
           </div>
           <div className="city">Timișoara</div>
-          <div className="menu">
+          <Link to="/settings" className="menu">
             <img width="30px" height="30px" src="/images/menu-dots.png" alt="add city" />
-          </div>
+          </Link>
 
           <div className="icon">
             <img width="100px" height="100px" src="/images/sunny.png" alt="add city" />

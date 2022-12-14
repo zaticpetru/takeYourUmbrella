@@ -12,6 +12,7 @@ import Login from './pages/login';
 import Root from './pages/root';
 import Weather from './pages/weather';
 import Register from './pages/register';
+import Settings from './pages/settings';
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
         path: "weather",
         element: <Weather/>
       },
+      {
+        path: "settings",
+        element: <Settings/>
+      }
     ]
   }
 ])
