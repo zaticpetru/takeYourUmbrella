@@ -4,6 +4,18 @@ export default function Login() {
 
   const navigate = useNavigate();
 
+  const forgotPassword = () => {
+    let text;
+    let email = prompt("Please enter your email:");
+    if (email == null || email == "") {
+      // promt canceled
+    } else {
+      // email
+      // if was entered a value
+      console.log(email)
+    }
+  }
+
   return (
     <div className="
                 container
@@ -20,21 +32,24 @@ export default function Login() {
         <p className="margin-none">Enter Your Username & Password</p>
       </div>
 
-      <input type={"email"}
-        id="email"
-        name="email"
-        placeholder="Username"
-        className="line-input margin-block-1 width-100 font-size-l"
-        />
-      <input type={"password"}
-        id="password"
-        name="password"
-        placeholder="Password"
-        className="line-input margin-block-1 width-100 font-size-l"
-        />
-      <button class="bb-button">LOGIN</button>
-      <Link className="link" to="/">Forgot your password?</Link>
-      <Link className="link" to="/">Create new account</Link>
+      <form className="flex flex-column align-items-center gap-2">
+        <input type={"email"}
+          id="email"
+          name="email"
+          placeholder="Username"
+          className="line-input margin-block-1 width-100 font-size-l"
+          />
+        <input type={"password"}
+          id="password"
+          name="password"
+          placeholder="Password"
+          className="line-input margin-block-1 width-100 font-size-l"
+          />
+        {/* <button className="bb-button" type="submit">LOGIN</button> */}
+        <Link to="/weather" className="bb-button" type="submit">LOGIN</Link>
+      </form>
+      <button className="link" onClick={() => forgotPassword()}>Forgot your password?</button>
+      <Link className="link" to="/register">Create new account</Link>
     </div>
   )
 }

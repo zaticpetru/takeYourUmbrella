@@ -10,6 +10,8 @@ import Home from './pages/home';
 import ErrorPage from './pages/error-page';
 import Login from './pages/login';
 import Root from './pages/root';
+import Weather from './pages/weather';
+import Register from './pages/register';
 
 const router = createBrowserRouter([
   {
@@ -24,7 +26,15 @@ const router = createBrowserRouter([
       {
         path: "login",
         element: <Login/>
-      }
+      },
+      {
+        path: "register",
+        element: <Register/>
+      },
+      {
+        path: "weather",
+        element: <Weather/>
+      },
     ]
   }
 ])
