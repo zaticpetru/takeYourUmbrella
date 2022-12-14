@@ -70,6 +70,10 @@ button:active {
   justify-content: flex-end;
 }
 
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
 .min-height-100vh {
   min-height: 100vh;
 }
@@ -98,6 +102,10 @@ button:active {
   padding-inline: 1rem;
 }
 
+.gap-05 {
+  gap: 0.5rem
+}
+
 .gap-1 {
   gap: 1rem;
 }
@@ -113,6 +121,10 @@ button:active {
 .width-90 {
   width: 90%;
 } 
+
+.text-align-center {
+  text-align: center;
+}
 
 .font-size-sm {
   font-size: 0.75rem;
@@ -239,6 +251,20 @@ button:active {
   min-height: 200px;
 }
 
+.hourly-forecast {
+  color: white;
+  border: solid 1px;
+}
+
+.weekly-forecast {
+  color: white;
+  border: solid 1px;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
 .plus {
   grid-area: plus;
 }
@@ -289,6 +315,10 @@ button:active {
   width: 90px;
 }
 
+.min-width-70px {
+  min-width: 70px;
+}
+
 .border-radius-sm {
   border-radius: 0.5rem
 }
@@ -299,4 +329,8 @@ button:active {
 
 .box-shadow {
   box-shadow: -5px 3px 5px #289FED
+}
+
+p {
+  margin: 0;
 }
