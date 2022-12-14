@@ -90,6 +90,14 @@ button:active {
   margin-inline: 1rem;
 }
 
+.padding-block-1 {
+  padding-block: 1rem;
+}
+
+.padding-inline-1 {
+  padding-inline: 1rem;
+}
+
 .gap-1 {
   gap: 1rem;
 }
@@ -100,6 +108,14 @@ button:active {
 
 .width-100 {
   width: 100%;
+}
+
+.width-90 {
+  width: 90%;
+} 
+
+.font-size-sm {
+  font-size: 0.75rem;
 }
 
 .font-size-m {
@@ -114,6 +130,26 @@ button:active {
   font-size: 2rem;
 }
 
+.font-size-xxl {
+  font-size: 3rem;
+}
+/* 400;600;700;800 */
+.font-weight-4 {
+  font-weight: 400;
+}
+
+.font-weight-6 {
+  font-weight: 600;
+}
+
+.font-weight-7 {
+  font-weight: 700;
+}
+
+.font-weight-8 {
+  font-weight: 800;
+}
+
 .margin-none {
   margin: 0;
 }
@@ -121,9 +157,6 @@ button:active {
 .padding-none {
   padding: 0;
 }
-
-
-
 
 #root {
   background-color: var(--color-light-blue);
@@ -184,6 +217,86 @@ button:active {
 
 .container {
   margin: auto;
-  width: 80%;
   max-width: 600px;
+}
+
+.grid {
+  display: grid;
+}
+.weather-card {
+  grid-template-areas:
+            "plus   city    city   city    menu "
+            ".      icon    icon   icon    ."
+            "day    day     day    day     day"
+            ".      temp    temp   temp    ."
+            "sep    sep     sep    sep     sep"
+            "wind   wind    .      c-rain  c-rain"
+            "press  press   .      humid   humid"
+            ;
+  justify-items: center;
+  background-color: #92D3F8;
+  color: white;
+  min-height: 200px;
+}
+
+.plus {
+  grid-area: plus;
+}
+
+.city {
+  grid-area: city;
+  font-weight: 600;
+}
+
+.menu {
+  grid-area: menu;
+}
+
+.icon {
+  grid-area: icon;
+}
+
+.day {
+  grid-area: day;
+}
+
+.temp {
+  grid-area: temp;
+}
+
+.sep {
+  grid-area: sep;
+  border: solid 1px white;
+}
+
+.wind {
+  grid-area: wind;
+}
+
+.c-rain {
+  grid-area: c-rain;
+}
+
+.press {
+  grid-area: press;
+}
+
+.humid {
+  grid-area: humid;
+}
+
+.width-90px {
+  width: 90px;
+}
+
+.border-radius-sm {
+  border-radius: 0.5rem
+}
+
+.border-radius-m {
+  border-radius: 1rem
+}
+
+.box-shadow {
+  box-shadow: -5px 3px 5px #289FED
 }

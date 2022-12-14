@@ -1,11 +1,12 @@
-import { Link, useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 
 export default function Register() {
   const navigate = useNavigate()
 
   return (
     <div className="
-                container
+                container width-90
+                padding-inline-1
                 flex flex-column
                 align-items-center
                 gap-2
