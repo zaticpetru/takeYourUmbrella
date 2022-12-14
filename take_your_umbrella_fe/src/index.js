@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import {
@@ -10,12 +9,24 @@ import {
 } from "react-router-dom"
 import Home from './pages/home';
 import ErrorPage from './pages/error-page';
+import Login from './pages/login';
+import Root from './pages/root';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home/>,
-    errorElement: <ErrorPage/>
+    element: <Root/>,
+    errorElement: <ErrorPage/>,
+    children: [
+      {
+        path: "",
+        element: <Home/>
+      },
+      {
+        path: "login",
+        element: <Login/>
+      }
+    ]
   }
 ])
 
