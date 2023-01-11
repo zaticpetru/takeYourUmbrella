@@ -6,8 +6,8 @@ export default function Login() {
 
   const forgotPassword = () => {
     let text;
-    let email = prompt("Please enter your email:");
-    if (email == null || email == "") {
+    let email = prompt("Please enter your email, we will send you the reset url:");
+    if (email === null || email === "") {
       // promt canceled
     } else {
       // email

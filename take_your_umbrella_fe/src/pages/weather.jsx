@@ -72,11 +72,17 @@ export default function Weather() {
 
           <div className="flex gap-05 overflow-x-auto">
             <ShortWeatherInfo time="Now" temperature="2°/3°" rainChance="74% rain"/>
-            <ShortWeatherInfo time="12:00" temperature="-2°/0°" rainChance="66% rain"/>
-            <ShortWeatherInfo time="12:00" temperature="-2°/0°" rainChance="66% rain"/>
-            <ShortWeatherInfo time="12:00" temperature="-2°/0°" rainChance="66% rain"/>
-            <ShortWeatherInfo time="12:00" temperature="-2°/0°" rainChance="66% rain"/>
-            <ShortWeatherInfo time="12:00" temperature="-2°/0°" rainChance="66% rain"/>
+            <ShortWeatherInfo time="12:00" temperature="-2°/0°" rainChance="60% rain"/>
+            <ShortWeatherInfo time="13:00" temperature="-2°" rainChance="50% rain"/>
+            <ShortWeatherInfo time="14:00" temperature="0°" rainChance="44% rain"/>
+            <ShortWeatherInfo time="15:00" temperature="-1°/0°" rainChance="30% rain"/>
+            <ShortWeatherInfo time="16:00" temperature="0°" rainChance="22% rain"/>
+            <ShortWeatherInfo time="17:00" temperature="1°/2°" rainChance="21% rain"/>
+            <ShortWeatherInfo time="18:00" temperature="-1°/0°" rainChance="25% rain"/>
+            <ShortWeatherInfo time="19:00" temperature="-1°" rainChance="18% rain"/>
+            <ShortWeatherInfo time="20:00" temperature="-2°/0°" rainChance="15% rain"/>
+            <ShortWeatherInfo time="21:00" temperature="-2°/0°" rainChance="15% rain"/>
+            <ShortWeatherInfo time="22:00" temperature="-2°/0°" rainChance="15% rain"/>
           </div>
         </div>
 

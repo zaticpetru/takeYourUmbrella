@@ -23,7 +23,7 @@ export default function Register() {
         <input type={"email"}
           id="email"
           name="email"
-          placeholder="Create Email / Username"
+          placeholder="Enter Email / Username"
           className="line-input margin-block-1 width-100 font-size-l"
           />
         <input type={"password"}

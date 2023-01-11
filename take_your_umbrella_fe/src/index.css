@@ -275,6 +275,7 @@ button:active {
 .weekly-forecast {
   color: white;
   border: solid 1px;
+  margin-bottom: 2rem;
 }
 
 .overflow-x-auto {
