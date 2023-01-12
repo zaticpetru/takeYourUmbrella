@@ -6,13 +6,13 @@ import {
   createBrowserRouter,
   RouterProvider
 } from "react-router-dom"
-import Home from './pages/home';
-import ErrorPage from './pages/error-page';
-import Login from './pages/login';
-import Root from './pages/root';
-import Weather from './pages/weather';
-import Register from './pages/register';
-import Settings from './pages/settings';
+import Home from './pages/Home';
+import ErrorPage from './pages/ErrorPage';
+import Login from './pages/Login';
+import Root from './pages/Root';
+import Weather from './pages/Weather';
+import Register from './pages/Register';
+import Settings from './pages/Settings';
 
 const router = createBrowserRouter([
   {
@@ -21,7 +21,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage/>,
     children: [
       {
-        path: "",
+        index: true,
         element: <Home/>
       },
       {

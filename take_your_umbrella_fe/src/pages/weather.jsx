@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
-import OneDayWeather from "../components/one-day-weather";
-import ShortWeatherInfo from "../components/short-weather-info";
+import OneDayWeather from "../components/OneDayWeather";
+import ShortWeatherInfo from "../components/ShortWeatherInfo";
 
 export default function Weather() {
   const navigate = useNavigate();

@@ -1,11 +1,18 @@
+import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 
 export default function Login() {
 
   const navigate = useNavigate();
 
+  const { register, handleSubmit, formState: { errors } } = useForm()
+
+  // console.log(errors)
+  const submitLoginForm = data => {
+    console.log(data);
+  } 
+
   const forgotPassword = () => {
-    let text;
     let email = prompt("Please enter your email, we will send you the reset url:");
     if (email === null || email === "") {
       // promt canceled
@@ -33,21 +40,30 @@ export default function Login() {
         <p className="margin-none">Enter Your Username & Password</p>
       </div>
 
-      <form className="flex flex-column align-items-center gap-2">
+      <form
+        onSubmit={handleSubmit(submitLoginForm)}
+        className="flex flex-column align-items-center gap-2">
         <input type={"email"}
           id="email"
           name="email"
           placeholder="Username"
           className="line-input margin-block-1 width-100 font-size-l"
+          {...register("email", {required: true})}
           />
+        {errors.email && <span>Email is required</span>}
         <input type={"password"}
           id="password"
           name="password"
           placeholder="Password"
           className="line-input margin-block-1 width-100 font-size-l"
+          {...register("password", {required: true})}
           />
-        {/* <button className="bb-button" type="submit">LOGIN</button> */}
-        <Link to="/weather" className="bb-button" type="submit">LOGIN</Link>
+        {errors.password && <span>Password is required</span>}
+        <input
+          type={"submit"}
+          value="LOGIN"
+          className="bb-button"
+          />
       </form>
       <button className="link" onClick={() => forgotPassword()}>Forgot your password?</button>
       <Link className="link" to="/register">Create new account</Link>
